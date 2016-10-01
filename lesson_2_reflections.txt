@@ -7,3 +7,21 @@ the history and files related to the repository. From what I saw it looks like
 this is largely a collection of text files so I suppose some of this can be
 created by hand (although that sounds ugly) but if there are any binary files
 created for tracking by Git then this is not going to work.
+
+
+
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+The staging area serves the purpose of organizing the subset of files/changes
+to include in a single commit. It's not always the case that you wish to
+commit all changes at once or even only one file/change at once. It's possible
+that you've made a series of changes but wish to separate them out into
+distinct logical commits. Organizing these into the staging area provides a
+convenience as it gives you the opportunity to organize as you wish without
+imposing a particular working style.
+- Git repository: Collection of all changes/commits/history for the project.
+- Working directory: Single checkout of the project; where you make changes.
+- Staging area: a file that describes what will go into the next commit.
+For more details read:
+https://git-scm.com/book/en/v2/Getting-Started-Git-Basics.
