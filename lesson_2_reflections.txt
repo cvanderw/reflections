@@ -37,3 +37,24 @@ running "git diff --staged" will show the difference between what's in the
 repository (latest changes there) and the staging area (the reflection of the
 next set of changes to be committed). `git status` will also be helpful in
 seeing what set of files are included in the staging area.
+
+
+
+What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+Branches would be very helpful when I want to try out experimental changes but
+still keep track of the history of those changes. The example in the course is
+a reasonable, albeit simplistic, example of such a need. The desire there was
+to create an "easy" version of the game and the initial approach was to reduce
+the number of rocks created. It could be that other aspects of the game could
+benefit from being made easier and some simple experimentation would be in
+order to verify what's best. Of course, while making these changes there's no
+reason to lose the benefits of version control but you also don't want to make
+changes directly into the main line code just yet. Therefore branching is
+useful. If the idea turns out to have little merit the entire branch can be
+dropped with no negative impact. If the ideas are solid they can be remerged
+into the mainline (master) branch.
+Yet another example of branches is keeping track of multiple competing
+implementation strategies with the same code. Keeping track of these changes
+in a sequential mainline branch would be impractical.
