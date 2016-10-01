@@ -1,0 +1,90 @@
+How did viewing a diff between two versions of a file help you see the bug
+that was introduced?
+
+Seeing the diff this way helped narrow down the search-space signicantly,
+especially by (1) limiting the content to that which changed as
+well as (2) comparing the changed lines side-by-side. It would have been
+significantly more difficult had I been required to manually look through the
+large source files independently to try to come up with what the errors may
+be.
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+If you have access to the entire history you can make changes without regard
+for making mistakes. Any mistakes you make can easily be undone. Another huge
+benefit is that you can use the diffs to see how you got to where you are from
+any particular point, and possibly more instructively, how some other
+programmer got from one point to another. As for the earlier problem of
+spotting errors in two different versions of a file, keeping the entire
+history (in terms of snapshots of changes) makes it possible to easily figure
+out where something may have gone wrong in development by simply comparing the
+current snapshot to the last, or in the worst case, a few versions behind (as
+opposed to having no idea what was wrong).
+
+
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like
+Google Docs does?
+
+Pros:
+- Commits contain a logical size and grouping of content. Automatic saving
+  would result in commits that are too large or too small but not necessarily
+  at good logical boundaries.
+- When you commit in git you have the opportunity to provide a commit message
+  describing the change that was performed.
+- Given the intentional logical delta that's part of a commit in git, the
+  diffs end up being easier to reason about.
+
+Cons:
+- You could forget to commit and unfortunately end up losing a large chunk of
+  work.
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Git, and other version control systems like it, are designed to work with
+collections of files as a unit. As an example, in a software development many
+files are related to each other and should have changes captured simultaneously
+instead of separately. An example is a C++ project where a header file and
+source (cpp) file would be changed together. Other examples include css and html
+files that would reasonably be modified together. For all of these the changes
+to these files collectively represent logical changes and as such should be
+captured together. On the other hand, Google Docs is for tracking a particular
+file at a time. It’s possible that files should be modified together but there’s
+no fixed requirement for that.
+
+
+
+How can you use the commands git log and git diff to view the history of
+files?
+
+git log: Used for viewing previous changes made to a repository of files.
+Especially useful for honing in on changes made (especially by reading
+hopefully well-written commit messages).
+git diff: Used for viewing the _actual_ changes made at the source-line level
+between different commits, either sequential commits are commits that are
+further apart.
+
+
+
+
+How might using version control make you more confident to make changes that could break something?
+
+With version control you can always revert to a point in time (snapshot of
+files) where the code did work and figure out what went wrong.
+
+
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to use Git to make changes to projects I'm working on. This will be
+good practice for using git, but beyond that it will have the benefits of
+version control such as allowing me to keep track of change history and see
+the tracks I've made over time. I also want to use my knowledge of Git to
+contribute towards other projects that are on GitHub.

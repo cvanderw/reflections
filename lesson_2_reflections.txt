@@ -1,0 +1,9 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Initializing a repository is necessary for creating the .git folder and
+metadata for tracking the Git repository. Without this step, it's not possible
+for Git to provide repository management since there isn't anything to support
+the history and files related to the repository. From what I saw it looks like
+this is largely a collection of text files so I suppose some of this can be
+created by hand (although that sounds ugly) but if there are any binary files
+created for tracking by Git then this is not going to work.
