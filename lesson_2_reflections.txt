@@ -25,3 +25,15 @@ imposing a particular working style.
 - Staging area: a file that describes what will go into the next commit.
 For more details read:
 https://git-scm.com/book/en/v2/Getting-Started-Git-Basics.
+
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+Inspecting the difference between the repository and what's in your staging
+area will help with ensuring you have one commit per logical change. That is,
+running "git diff --staged" will show the difference between what's in the
+repository (latest changes there) and the staging area (the reflection of the
+next set of changes to be committed). `git status` will also be helpful in
+seeing what set of files are included in the staging area.
