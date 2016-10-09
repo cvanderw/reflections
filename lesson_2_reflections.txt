@@ -58,3 +58,15 @@ into the mainline (master) branch.
 Yet another example of branches is keeping track of multiple competing
 implementation strategies with the same code. Keeping track of these changes
 in a sequential mainline branch would be impractical.
+
+
+
+
+How do the diagrams help you visualize the branch structure?
+
+Drawing out the branch structure helps visualize:
+- How the branches relate to each other. In particular, you can see which
+  branches build on features from previous branches and which branches have
+  commits/functionality not found in other branches.
+- Visualization helps also identify dead-end branches from which you cannot get
+  back to easily unless you know the commit ID.
