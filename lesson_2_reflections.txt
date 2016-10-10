@@ -89,3 +89,17 @@ it reinforces that the disparate history is not lost even though a single
 branch is the result of the merge. For example, running "git log --graph"
 will still show the differences that took place and help visualize the
 different commit parents that are not obvious by a single "git log" command.
+
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Doing merges manually all the time:
+
+Pros:
+- You avoid any of the surprising bugs that could result from Git trying to be
+  too smart and merging for you.
+
+Cons:
+- Pain up the ass to keep doing things manually, especially for super simple
+  and obvious merges.
