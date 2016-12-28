@@ -84,7 +84,7 @@ files) where the code did work and figure out what went wrong.
 Now that you have your workspace set up, what do you want to try using Git for?
 
 I want to use Git to make changes to projects I'm working on. This will be
-good practice for using git, but beyond that it will have the benefits of
+good practice for using Git, but beyond that it will have the benefits of
 version control such as allowing me to keep track of change history and see
-the tracks I've made over time. I also want to use my knowledge of Git to
+the changes I've made over time. I also want to use my knowledge of Git to
 contribute towards other projects that are on GitHub.
