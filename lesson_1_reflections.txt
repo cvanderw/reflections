@@ -48,13 +48,13 @@ Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
 Git, and other version control systems like it, are designed to work with
-collections of files as a unit. As an example, in a software development many
+collections of files as a unit. As an example, in software development many
 files are related to each other and should have changes captured simultaneously
 instead of separately. An example is a C++ project where a header file and
 source (cpp) file would be changed together. Other examples include css and html
 files that would reasonably be modified together. For all of these the changes
 to these files collectively represent logical changes and as such should be
-captured together. On the other hand, Google Docs is for tracking a particular
+captured together. On the other hand, Google Docs is for tracking one particular
 file at a time. It’s possible that files should be modified together but there’s
 no fixed requirement for that.
 
