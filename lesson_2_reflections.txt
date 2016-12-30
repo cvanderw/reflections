@@ -80,7 +80,7 @@ into the destination branch. The result is that all of those commits are now
 accessible via the destination branch. It is now safe to delete the branch
 those commits came from. Deleting the branch does not delete the changes,
 rather it simply deletes the label applied to that branch. I can only assume
-that by "why do we reprsent it in the diagram the way we do" the question is
+that by "why do we represent it in the diagram the way we do" the question is
 referring to the way the branches were visualized in the Udacity course
 https://classroom.udacity.com/courses/ud775 where the coins and master
 branches were visualized as coming together to form a new node that has both
