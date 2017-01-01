@@ -1,0 +1,131 @@
+This document lists a few important git commands.
+
+The point of this document is to reinforce Git commands that I learn so I'm more
+likely to remember them.
+
+
+
+git log
+
+Shows commit logs to a git repository. Most recent changes are displayed first.
+Commit ID and commit message are displayed along with date and author.
+Including "--stat" will provide some statistics with the log info. For example,
+it will show the number of lines of change for each file in the commits.
+
+Another useful options include "--oneline" to simplify output by providing message
+on one line and using a shorter commit id. Also "--graph" will visually
+represent changes via a graph which is useful for seeing changes along different
+branches (include "--oneline" to make this easier to read).
+Consider including the names of branches if you want to see content from more
+than one branch.
+
+"git log -n <number>" will show no more than <number> commit messages (as
+opposed to showing all by default).
+
+
+git diff
+
+Show changes between commits, commit and working tree, etc.
+- By default (just issuing "git diff"), the command shows the changes that could
+  be staged for commit (if you issue "git add").
+- Including --cached (or --staged)
+  to the command will show the differences between the index (what's staged for
+  commit) and a given commit or HEAD (by default).
+- Simply issuing "git diff <commit>" will compare working tree to the named
+  <commit> (HEAD could be used here).
+- git <commit> <commit> can compare two arbitrary commits.
+
+
+git add
+
+Adds file content to the index for later submission (commit).
+The changes added here become part of the index (that is, the snapshot of the
+working tree to use for a subsequent commit). If further changes are made to the
+working tree additional "git add" commands will be required to have those
+changes reflected in the index.
+
+
+git status
+
+Show working tree status. Indicates what changes exist in the index which could
+be committed (i.e., by running "git commit"), as well as which changes in
+working tree not present in the index (which could include paths not tracked in
+Git at all) which can later be committed (i.e., by running "git add" followed by
+"git commit").
+
+
+git commit
+
+Stores current contents of index in a new commit along with a log message
+describing the change.
+
+
+git branch
+
+List, create, or delete branches.
+
+
+git clone
+
+Clones a repository into a new directory. Usage is "git clone <repository>"
+where <repository> is typically some URL where the repository resides.
+
+
+git show
+
+Shows various types of objects depending on what argument is provided. For
+example, "git show <commit>" will include the commit message and commit id (as
+per "git log") as well as a diff with that commit's parent.
+
+
+git checkout
+
+Switch branches. Updates files in the working tree to match the state in the
+provided commit.
+
+
+git init
+
+Create an empty Git repository. When run in an existing directory this command
+creates the required .git directory and the current directory (along with
+subdirectories) are candidates for inclusion in the Git repository. The
+repository is initially empty (starts off with zero commits) and users will be
+required to first "git add" items and commit them for anything to be tracked.
+
+
+git reset
+
+Can be used to unstage a file (that was added to the index). In doing so the
+changes made to the file itself are still preserved. Command: "git reset
+<path>". By default this reverts changes in the staging area (index). However, a
+mode can be provided to change this behavior. For example, "git reset --hard"
+will revert any changes to index or working tree (which is quite severe so don't
+do this unless that's what you really mean).
+
+
+git gc
+
+Cleanup unnecessary files. Removes unreachable commits.
+
+
+git merge
+
+Incorporate changes from named commits (or branches) into the current branch.
+
+
+git remote
+
+Manage tracked repositories for the Git project. "git remote" by itself shows
+any remotes set up for the project. "git remote -v" includes any URLs for those
+remotes. Use "git remote add <url>" to add a repository".
+
+
+git push
+
+Updates remote refs. Can be used to push local changes to a remote. Command
+would be "push <remote> <local>".
+
+
+git pull
+
+Incorporates remote changes into the current, local branch.
