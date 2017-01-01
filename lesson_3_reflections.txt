@@ -1,0 +1,7 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+Having a remote repository is helpful for a number of reasons:
+- A remote repo allows for easier sharing and collaboration with others.
+- A remote provides a backup in case local work is lost.
+- Even if you never decide to work with others, a remote repo still has the benefit of
+  allowing you to pull down the changes on a different computer to continue work there.
