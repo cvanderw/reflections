@@ -16,3 +16,30 @@ and independent from each other. Git seems to encourage branching for feature
 development. However, it's not always necessary to have access to every single
 branch nor to track every single change. By having users manually pull changes
 they are free to decide what to include and what not to.
+
+
+
+Describe the differences between forks, clones, and branches. When would you
+use one instead of another?
+
+Branches: Divergent commits with their own history within a given repository.
+You'd want to use branches when you're working within a given repository but
+wish to try out new functionality or diverge from the main branch at any point
+in time.
+
+Clones: Copies of repositories in different locations. For instance, a
+repository on GitHub can be cloned to a user's local machine or even to
+another repository on GitHub. A repository on a different machine (that is not
+on GitHub) can also be cloned to yet other machines. Apparently it's also
+possible to clone on your own machine. Cloning is about making copies of
+repositories. You'd want to use clones when there's a need to work on a copy
+of the repository in a different location; that is, your interest is in
+working on any of the branches with the repository.
+
+Forks: Clones within GitHub. One may wish to clone a GitHub repository onto a
+different GitHub account. Forking is a convenient way to achieve this. You'd
+want to fork a repository if it's already on GitHub and you're planning to
+clone it to a different GitHub account; perhaps you have no interest in
+merging changes back to the original repository because you want to use the
+existing codebase as a baseline upon which you'll make further changes that
+are different to the direction of the existing codebase you forked.
