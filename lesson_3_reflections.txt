@@ -43,3 +43,20 @@ clone it to a different GitHub account; perhaps you have no interest in
 merging changes back to the original repository because you want to use the
 existing codebase as a baseline upon which you'll make further changes that
 are different to the direction of the existing codebase you forked.
+
+
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+If you have a copy of the last known state of the remote stored locally then
+that allows you to work offline. When you are online you can push/pull as
+needed to have the local version of the remote updated. If/when you're offline
+your changes done to the local master branch can be (efficiently) compared to
+the local version of the remote to infer how much you're potentially ahead or
+behind. When you end up actually trying to push/pull this might be out-of-date
+but the local copy affords you the ability to easily work offline without the
+strict requirement of being connected to the repository at all times. In fact,
+the presence of a local copy of the remote seems to emphasize the fact that
+Git is intended to be entirely decentralized unlike many other version control
+systems.
