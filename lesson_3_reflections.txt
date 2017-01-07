@@ -60,3 +60,34 @@ strict requirement of being connected to the repository at all times. In fact,
 the presence of a local copy of the remote seems to emphasize the fact that
 Git is intended to be entirely decentralized unlike many other version control
 systems.
+
+
+
+How would you collaborate without using Git or GitHub? What would be easier,
+and what would be harder?
+
+Without using Git I'd probably use a different version control system
+(previously I had used Subversion but I suppose these days another option is
+Mercurial). I have a hard time imagining working on a project with other
+developers where we don't use version control. Git is lightweight and doesn't
+require network access in order to do merging or a lot of other typical
+version control work and so using a different version control system would be
+less enjoyable/convenient compared to Git in that respect (of course, if the
+other system is also a distributed management system then the benefits will be
+similar). If our team chose to not use any version control system then we'd
+have a really hard time to get things done. It's hard to come up with benefits
+of choosing to not use Git. I suppose one benefit is that there's one less
+thing to learn. Using Git is great but everyone needs to be familiar with it
+in order to get value from the tool.
+
+The other question is how I would get work done without GitHub; here I imagine
+the assumption is that our team is using Git but just not GitHub. This is fine
+since no one is required to use GitHub when using Git. GitHub provides the
+benefit of hosting the code/resources for us (provided repository is public or
+we're paying) and it provides a convenient web-based interface for everyone
+to work with the code. So all of those things are clearly benefits of using
+GitHub (over potentially rolling our own solution). Another neat thing about
+GitHub is that since so many projects exist there it's easy to share your
+project with others and benefit by reusing or learning from other projects. If
+we chose not to use GitHub we'd have to run our own servers hosting the source
+code (assuming we want a back up copy of the source).
