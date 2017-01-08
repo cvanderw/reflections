@@ -91,3 +91,20 @@ GitHub is that since so many projects exist there it's easy to share your
 project with others and benefit by reusing or learning from other projects. If
 we chose not to use GitHub we'd have to run our own servers hosting the source
 code (assuming we want a back up copy of the source).
+
+
+
+When would you want to make changes in a separate branch rather than directly
+in master? What benefits does each approach have?
+
+If you're working on clearly separate feature then a different branch makes
+sense (we saw examples of this earlier in the asteroids game where easy modes
+and coin branches were created). Another reason to have different branches is
+for the use of pull requests: by isolating the changes into different branches
+(off of master), the changes that are made can be viewed (and even updated) in
+isolation without affecting the master changes. These changes can be updated
+separately and then finally aproved and merged into master.
+
+On the other hand, working entirely within master does have the benefit of not
+needing to worry about all this additional merge complexity (having to resolve
+conflicts, figure where to merge changes, etc.).
