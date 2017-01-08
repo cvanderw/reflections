@@ -117,7 +117,8 @@ git remote
 
 Manage tracked repositories for the Git project. "git remote" by itself shows
 any remotes set up for the project. "git remote -v" includes any URLs for those
-remotes. Use "git remote add <url>" to add a repository".
+remotes. Use "git remote add <name> <url>" to add a named repository located at
+the provided url.
 
 
 git push
