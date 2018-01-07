@@ -120,6 +120,14 @@ any remotes set up for the project. "git remote -v" includes any URLs for those
 remotes. Use "git remote add <name> <url>" to add a named repository located at
 the provided url.
 
+A good use of "git remote", aside from simply setting up a remote to the origin
+repository, is to create an upstream remote. This can be used as the remote of a
+fork pointing to the original repository from which the repo was forked. For
+example:
+  "git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPO.git".
+See documentation here:
+https://help.github.com/articles/configuring-a-remote-for-a-fork/.
+
 
 git push
 
