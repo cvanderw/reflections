@@ -22,6 +22,9 @@ than one branch.
 "git log -n <number>" will show no more than <number> commit messages (as
 opposed to showing all by default).
 
+Yet another interesting flag to provide is "--decorate". This decorates the last
+commit with the branches available and the branch HEAD currently points to.
+
 
 git diff
 
