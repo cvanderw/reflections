@@ -47,6 +47,11 @@ working tree to use for a subsequent commit). If further changes are made to the
 working tree additional "git add" commands will be required to have those
 changes reflected in the index.
 
+One interesting option to include is -p (or --patch). This will enter an
+interactive mode allowing you to specify which specific "patches" of the change
+to include. This is quite convenient if you've made several changes to a file
+but only want to include a subset of those changes in the commit.
+
 
 git status
 
