@@ -143,6 +143,17 @@ Updates remote refs. Can be used to push local changes to a remote. Command
 would be "push <remote> <local>".
 
 
+git fetch
+
+Pulls in branches, tags, and all other data needed to complete their histories.
+For example, you could run 'git fetch origin master' to grab data related to the
+master branch on the origin remote and pull it down to your local master branch.
+Note, though, that running 'git fetch' simply pulls down the data from the
+remote, it doesn't apply the changes (for that you'll need to follow up with
+'git merge').
+
+
 git pull
 
-Incorporates remote changes into the current, local branch.
+Incorporates remote changes into the current, local branch. This command is
+effectively the combination of 'git fetch' followed by 'git merge'.
